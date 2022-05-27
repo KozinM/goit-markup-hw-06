@@ -96,16 +96,21 @@
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <div class="form-field"> 
+          <div class="form-field textarea"> 
             <label class="form-label" for="comment" placeholder="Введите текст">Комментарий</label>
             <textarea class="form-input-textarea" name="comment" rows="5" placeholder="Введите текст"></textarea>
           </div>
-            <label class="form-label">Соглашаюсь с рассылкой и принимю условия
+          <div class="form-field">
+            <label class="form-label copyright">Соглашаюсь с рассылкой и принимаю &nbsp <a class="copyright-link" href=""> условия договора</a>
             <input class="input-checkbox" type="checkbox" name="copyright">
-            <span class="mod-checkbox"></span>
+            <span class="mod-checkbox">
+              <svg class="mod-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
           </label>
-            <button type="submit">Отправить заявку</button>
-
+            <button class="btn-submit" type="submit">Отправить</button>
+          </div>
           </form>
         </div>
       </div>
@@ -593,6 +598,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-container-subscription">
+          <h3 class="footer-container-subscription-title">подпишитесь на рассылку</h3>
+          <form class="subscription-form">
+            <div class="subscription-form-field"> 
+              <input class="subscription-form-input" placeholder="E-mail" type="email" name="mail" id="mail">
+            </div>
+            <div class="subscription-form-field">
+              <button class="btn-submit footer-subscription" type="submit">
+                <span class="btn-submit-title">Подписаться 
+              </span>
+                <span>
+                  <svg class="subscription-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
