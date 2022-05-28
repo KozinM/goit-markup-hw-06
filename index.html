@@ -80,21 +80,21 @@
             <div class="form-field">
               <label class="form-label" for="name">Имя</label>
               <input class="form-input" type="text" name="name" id="name" />
-              <svg class="contact-icon" width="12" height="12">
+              <svg class="modal-contact-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-contact"></use>
               </svg>
             </div>
             <div class="form-field">
               <label class="form-label" for="phone">Телефон</label>
               <input class="form-input" type="tel" name="phone" id="phone" />
-              <svg class="contact-icon" width="13" height="13">
+              <svg class="modal-contact-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
             <div class="form-field">
-              <label class="form-label" for="mail">Почта</label>
-              <input class="form-input" type="email" name="mail" id="mail" />
-              <svg class="contact-icon" width="15" height="12">
+              <label class="form-label" for="email">Почта</label>
+              <input class="form-input" type="email" name="email" id="email" />
+              <svg class="modal-contact-icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -102,30 +102,32 @@
               <label
                 class="form-label"
                 for="comment"
-                placeholder="Введите текст"
                 >Комментарий</label
               >
               <textarea
                 class="form-input-textarea"
                 name="comment"
+                id="comment"
                 rows="5"
                 placeholder="Введите текст"
               ></textarea>
             </div>
             <div class="form-field">
-              <label class="form-label copyright"
-                >Соглашаюсь с рассылкой и принимаю&nbsp
+              <input
+              class="input-checkbox"
+              type="checkbox"
+              name="copyright"
+              id="copyright"
+            />
+            <span class="mod-checkbox">
+              <svg class="mod-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
+              <label class="form-label copyright" for="copyright"
+                >Соглашаюсь с рассылкой и принимаю&nbsp;
                 <a class="copyright-link" href=""> условия договора</a>
-                <input
-                  class="input-checkbox"
-                  type="checkbox"
-                  name="copyright"
-                />
-                <span class="mod-checkbox">
-                  <svg class="mod-icon" width="16" height="15">
-                    <use href="./images/icons.svg#icon-checked"></use>
-                  </svg>
-                </span>
+
               </label>
               <button class="btn-submit" type="submit">Отправить</button>
             </div>
@@ -631,16 +633,16 @@
                 id="mail"
               />
             </div>
-            <div class="subscription-form-field">
+           <!--  <div class="subscription-form-field"> -->
               <button class="btn-submit footer-subscription" type="submit">
                 <span class="btn-submit-title">Подписаться </span>
-                <span>
+                <!-- <span> -->
                   <svg class="subscription-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
-                </span>
+               <!--  </span> -->
               </button>
-            </div>
+           <!--  </div> -->
           </form>
         </div>
       </div>
